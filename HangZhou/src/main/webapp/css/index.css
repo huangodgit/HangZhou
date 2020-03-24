@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px; font-family:"宋体"; padding:0 0; margin:0 0; }
+a{text-decoration:none;}
+ul,li{list-style:none; padding:0 0; margin:0 0;}
+img{border:none;}
+.cwhite{color:#C3E9FF; padding-top:3px;}
+.cwhite:hover{color:#C3E9FF;}
+.cbulebold{color:#3378D7; font-weight:bold; font-size:14px;}
+.cblack{color:#000000;}
+.cblack:hover{color:#666666;}
+.cgray{color:#444444;}
+.cgray a{color:#444444;}
+.cgray a:hover{color:#444444; text-decoration:underline;}
+.cgray2{color:#999999;}
+.cblue{color:#0000CC; text-align:center;}
+.cblue a{color:#0000CC; }
+.cblue a:hover{color:#0000CC; text-decoration:underline;}
+/* 导航*/
+.content_F{ width:250px; height:auto;}}
+.nav_F{ width:165px; height:28px;}
+.nav_F_a{ width:55px; height:28px; float:left;}
+.nav_F_b{ width:54px; height:28px; float:left;}
+.nav_F_c{ width:54px; height:28px; float:left;}
+
+ /* 导航*/
+.text_navF{ width:125px; height:auto;}
+.text_navtop{ width:125px; height:20px; background:url(../images/text_nav_13.png) no-repeat;}
+.text_nav_1{ width:125px; height:29px; }
+.text_navbottom{ width:125px; height:17px; background:url(../images/text_nav_33.png) no-repeat; }
+/* 全局*/
+.all_F{ clear:both; width:165px; height:165px; background:#C6CDDC; border:1px solid #5F729C; filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+-moz-opacity:0.8; /*Firefox私有，透明度50%*/
+opacity:0.8;/*其他，透明度50%*/}
+.map_F{  width:157px; height:159px; margin: 0 auto; margin-top:3px;}
+
+.GridInfoTool{ clear:both;position: absolute;z-index: 0;width:400px;  top: 50px;right: 300px; filter:alpha(opacity=100);}
+.MoreInfoTool{ clear:both;position: absolute;z-index: 0; top: 80px;right: 10px; border:1px solid #5F729C; filter:alpha(opacity=80);}
+
+/* 村镇*/
+/*
+.all_TOWN{ clear:both; width:400px; height:400px; background:#C6CDDC; border:1px solid #5F729C; filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;}
+.map_TOWN{  width:260px; height:370px; margin: 0 auto; margin-top:5px; background:#FFFFFF; padding:5px;}
+*/
+
+/* 搜索*/
+/*.search_F{ clear:both;z-index: 0;width: 100%;height: 100%;position: absolute;top: 0;right: 0; border:1px solid #5F729C; filter:alpha(opacity=80);
+-moz-opacity:0.8; */
+.search_F{ clear:both; width:265px; height:235px; background:#C6CDDC; border:1px solid #5F729C; filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;}
+.searchcontent_F{  width:245px; height:200px; margin: 0 auto; margin-top:5px; background:#FFFFFF; padding:5px;}
+.dw_F{ width:245px; height:25px; border-bottom:1px solid #D0D5DF;}
+
+.dw_arrow{ width:12px; height:17px; float:left; padding-top:3px;}
+.dw_text{ width:220px; height:25px; float:right; line-height:25px; color:#3366CC;  }
+.dw_text a{ width:220px; height:25px; float:right; line-height:25px; color:#3366CC;  }
+.dw_text a:hover{ width:220px; height:25px; float:right; line-height:25px; color:#093386;  }
+.search_frame{ width:200px; height:24px;}
+.search_frame_left{ width:220px; height:24px; float:left;}
+.search_frame_right{ width:21px; height:24px; float:right;margin-right:-18px;margin-top:-24px;}
+.search_input{ width:180px;line-height:15px; font-size:10px; height:20px; border:none;}
+
+
+ /* 翻页*/
+ .dw_F2{ width:245px; height:25px; padding-top:10px; }
+.page_F{ width:18px; height:18px; border:1px solid #B6C0D5; text-align:center; float:left; margin-left:3px; margin-right:3px; line-height:18px;}
+.page_no{ width:20px; height:20px;  text-align:center; font-size:12px; float:left; font-weight:bold; color:#333333; margin-left:3px; margin-right:3px; line-height:20px;}
+.page_next{ width:55px; height:18px; border:1px solid #B6C0D5; text-align:center; float:left; margin-left:3px; margin-right:3px; line-height:18px;}

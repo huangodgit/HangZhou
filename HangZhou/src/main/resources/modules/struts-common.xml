@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="jdubp-default" extends="struts-default">
+		<global-results>
+			<result name="exception">/exception.jsp</result>
+			<result name="index">/index.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="sqlException" exception="java.sql.SQLException"></exception-mapping>
+			<exception-mapping result="exception" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	<package name="BaseInfo" namespace="/BaseInfo" extends="jdubp-default">
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*/*" class="com.qqpp.qzce.baseInfo.web.{1}ManageAction"
+			method="{2}">
+			<result name="{2}">/content/baseInfo/{1}/{2}.jsp</result>
+			<param name="uploadDir">/upload/uploadFiles</param> 
+		</action>
+	</package>
+	<package name="News" namespace="/News" extends="jdubp-default">
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*/*" class="com.qqpp.qzce.news.web.{1}ManageAction"
+			method="{2}">
+			<result name="{2}">/content/news/{1}/{2}.jsp</result>
+		</action>
+	</package>
+	
+</struts>

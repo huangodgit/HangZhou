@@ -1,0 +1,24 @@
+.tip-box {
+	z-index: 1;
+	background-color: #bf1515;
+	margin-top: 10px;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.43);
+}
+
+.tip-box p {
+	margin: 3px 10px;
+	text-align: center;
+	color: azure;
+}
+
+.tip-box::after {
+	position: absolute;
+	display: inline-block;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid #bf1515;
+	bottom: 26px;
+	left: 17px;
+	content: '';
+}

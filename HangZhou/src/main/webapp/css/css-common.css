@@ -1,0 +1,7 @@
+.control-label {
+	text-align: right;
+	text-indent: -2em;
+}
+.pagination li a {
+  line-height: 1;
+}

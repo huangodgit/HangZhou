@@ -1,0 +1,21 @@
+.font14{
+	font-size:14px;
+}
+.font{
+	font-size:14px;
+}
+.padding-right8{
+	padding-right:8px;
+}
+.padding8{
+	padding:8px;
+}
+.tableSpan{
+	width:100%;
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+}
+label.error{
+	color:#ff0000;
+}

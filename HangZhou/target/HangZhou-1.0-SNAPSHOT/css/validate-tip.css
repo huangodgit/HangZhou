@@ -1,0 +1,29 @@
+.tip-box {
+	position: absolute;
+	z-index: 1;
+	left: 77%;
+	background-color: #bf1515;
+	margin-top: 2px;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.43);
+}
+
+.tip-box p {
+	margin: 3px 10px;
+	text-align: center;
+	color: azure;
+}
+
+.tip-box::after {
+	position: absolute;
+	display: inline-block;
+	/* border-top: 10px solid #bf1515;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; */
+	border-right: 10px solid #bf1515;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	bottom: 2px;
+	left: -5px;
+	content: '';
+}

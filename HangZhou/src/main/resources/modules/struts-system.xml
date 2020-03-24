@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="jdubp-default" extends="struts-default">
+		<global-results>
+			<result name="exception">/exception.jsp</result>
+			<result name="index">/index.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="sqlException" exception="java.sql.SQLException"></exception-mapping>
+			<exception-mapping result="exception" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	<package name="Main" namespace="/" extends="jdubp-default">
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*/*" class="com.sh.frame.system.web.MainAction"
+			method="{1}">
+			<result name="index">/index.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+	</package>
+	
+	<package name="System" namespace="/System" extends="jdubp-default">
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*/*" class="com.sh.frame.system.web.{1}ManageAction"
+			method="{2}">
+			<result name="{2}">/content/system/{1}/{2}.jsp</result>
+		</action>
+	</package>
+</struts>
+
+
