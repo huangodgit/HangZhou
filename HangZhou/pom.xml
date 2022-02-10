@@ -46,7 +46,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>3.3.2.GA</version>
+      <version>5.4.24.Final</version>
     </dependency>
     <!-- <dependency> <groupId>com.oracle</groupId> <artifactId>classes12</artifactId>
         <version>10.2.0.2.0</version> </dependency> -->
